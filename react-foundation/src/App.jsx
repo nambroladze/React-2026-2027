@@ -27,7 +27,7 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleClick("Componenets")}>
+            <TabButton onSelect={() => handleClick("Components")}>
               Components
             </TabButton>
             <TabButton onSelect={() => handleClick("JSX")}>JSX</TabButton>
