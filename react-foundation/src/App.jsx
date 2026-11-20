@@ -4,13 +4,6 @@ import Header from "./components/Header";
 import TabButton from "./components/TabButton";
 
 function App() {
-  let selectedTopic = "Please Choose A Topic";
-
-  function handleClick(value) {
-    selectedTopic = value;
-    console.log(selectedTopic);
-  }
-
   return (
     <div>
       <Header />
@@ -27,15 +20,13 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleClick("components")}>
-              components
-            </TabButton>
-            <TabButton onSelect={() => handleClick("jsx")}>jsx</TabButton>
-            <TabButton onSelect={() => handleClick("props")}>props</TabButton>
-            <TabButton onSelect={() => handleClick("state")}>state</TabButton>
+            <TabButton />
+            <TabButton />
+            <TabButton />
+            <TabButton />
           </menu>
         </section>
-        {selectedTopic}
+        Please Choose A Topic
       </main>
     </div>
   );
